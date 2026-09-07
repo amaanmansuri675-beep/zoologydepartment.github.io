@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Poultry Farming Field Visit Report - Department of Zoology, S.R.K.P. Govt. College Kishangarh">
+    <meta name="author" content="Amaan Mansuri">
+
+    <title>Zoology Department | Poultry Farming Field Visit</title>
+
+    <style>
+        /* ==============================
+           RESET & BASIC SETTINGS
+        ============================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f8f6;
+            color: #17251d;
+            line-height: 1.6;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        section {
+            scroll-margin-top: 80px;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        /* ==============================
+           HEADER
+        ============================== */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.96);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e3e9e5;
+        }
+
+        .navbar {
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            color: #176b3a;
+        }
+
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: #176b3a;
+            color: white;
+            display: grid;
+            place-items: center;
+            font-size: 23px;
+        }
+
+        .logo-text small {
+            display: block;
+            color: #6b756f;
+            font-size: 10px;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .logo-text span {
+            font-size: 17px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        nav a {
+            padding: 9px 12px;
+            border-radius: 8px;
+            color: #435148;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.25s;
+        }
+
+        nav a:hover {
+            background: #e9f5ed;
+            color: #176b3a;
+        }
+
+        .menu-btn {
+            display: none;
+            border: none;
+            background: #176b3a;
+            color: white;
+            width: 43px;
+            height: 43px;
+            border-radius: 10px;
+            font-size: 23px;
+            cursor: pointer;
+        }
+
+        /* ==============================
+           HERO
+        ============================== */
+
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background:
+                linear-gradient(90deg,
+                rgba(5,39,20,.92) 0%,
+                rgba(5,39,20,.72) 48%,
+                rgba(5,39,20,.30) 100%),
+                url("https://images.unsplash.com/photo-1569230516306-5a22cb0f6f8f?auto=format&fit=crop&w=1800&q=85")
+                center/cover;
+        }
+
+        .hero-content {
+            color: white;
+            max-width: 760px;
+            padding: 80px 0;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: rgba(255,255,255,.13);
+            border: 1px solid rgba(255,255,255,.25);
+            padding: 8px 14px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 70px);
+            line-height: 1.04;
+            margin-bottom: 17px;
+            letter-spacing: -2px;
+        }
+
+        .hero h1 span {
+            color: #9be4b3;
+        }
+
+        .hero p {
+            font-size: 17px;
+            max-width: 680px;
+            color: #e7f1ea;
+            margin-bottom: 28px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 13px 20px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            transition: .25s;
+            border: 1px solid transparent;
+        }
+
+        .btn-primary {
+            background: #9be4b3;
+            color: #07361b;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: #b4efc8;
+        }
+
+        .btn-outline {
+            border-color: rgba(255,255,255,.45);
+            color: white;
+            background: rgba(255,255,255,.08);
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #176b3a;
+        }
+
+        /* ==============================
+           INTRO
+        ============================== */
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title .mini {
+            color: #176b3a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 12px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .section-title h2 {
+            font-size: clamp(28px, 4vw, 42px);
+            line-height: 1.15;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: auto;
+            color: #68756d;
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 30px;
+            align-items: stretch;
+        }
+
+        .intro-card {
+            background: white;
+            padding: 32px;
+            border-radius: 20px;
+            border: 1px solid #e1e9e3;
+            box-shadow: 0 10px 30px rgba(20,50,30,.05);
+        }
+
+        .intro-card h3 {
+            margin-bottom: 13px;
+            color: #176b3a;
+            font-size: 22px;
+        }
+
+        .intro-card p {
+            color: #59665d;
+            margin-bottom: 13px;
+        }
+
+        .visit-info {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 13px;
+            margin-top: 22px;
+        }
+
+        .info-box {
+            padding: 16px;
+            background: #f0f7f2;
+            border-radius: 12px;
+        }
+
+        .info-box strong {
+            display: block;
+            font-size: 12px;
+            color: #738078;
+            margin-bottom: 3px;
+        }
+
+        .info-box span {
+            font-weight: 700;
+            color: #176b3a;
+        }
+
+        /* ==============================
+           STATISTICS
+        ============================== */
+
+        .stats {
+            background: #0c4525;
+            color: white;
+            padding: 35px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 12px;
+        }
+
+        .stat-icon {
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+
+        .stat h3 {
+            font-size: 28px;
+            color: #a8eabd;
+        }
+
+        .stat p {
+            font-size: 13px;
+            color: #d5e5da;
+        }
+
+        /* ==============================
+           POULTRY TYPES
+        ============================== */
+
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 22px;
+        }
+
+        .type-card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid #e0e8e2;
+            box-shadow: 0 8px 25px rgba(25,55,35,.06);
+            transition: .3s;
+        }
+
+        .type-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(25,55,35,.12);
+        }
+
+        .type-image {
+            height: 215px;
+            overflow: hidden;
+        }
+
+        .type-image img {
+            height: 100%;
+            object-fit: cover;
+            transition: .4s;
+        }
+
+        .type-card:hover .type-image img {
+            transform: scale(1.06);
+        }
+
+        .type-body {
+            padding: 22px;
+        }
+
+        .type-body h3 {
+            margin-bottom: 8px;
+            color: #176b3a;
+        }
+
+        .type-body p {
+            color: #68736b;
+            font-size: 14px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e8f5ec;
+            color: #176b3a;
+            padding: 5px 9px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        /* ==============================
+           MANAGEMENT
+        ============================== */
+
+        .management {
+            background: #eef5f0;
+        }
+
+        .management-grid {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+
+        .management-card {
+            background: white;
+            border: 1px solid #dde7e0;
+            border-radius: 17px;
+            padding: 25px;
+            display: flex;
+            gap: 17px;
+        }
+
+        .management-icon {
+            min-width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: #e8f5ec;
+            display: grid;
+            place-items: center;
+            font-size: 25px;
+        }
+
+        .management-card h3 {
+            margin-bottom: 5px;
+            color: #176b3a;
+        }
+
+        .management-card p {
+            color: #667169;
+            font-size: 14px;
+        }
+
+        /* ==============================
+           PROCESS
+        ============================== */
+
+        .process {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 14px;
+        }
+
+        .step {
+            position: relative;
+            background: white;
+            padding: 24px 15px;
+            text-align: center;
+            border-radius: 16px;
+            border: 1px solid #e0e8e2;
+        }
+
+        .step-number {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: #176b3a;
+            color: white;
+            display: grid;
+            place-items: center;
+            margin: 0 auto 13px;
+            font-weight: 800;
+        }
+
+        .step h3 {
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .step p {
+            color: #738078;
+            font-size: 12px;
+        }
+
+        /* ==============================
+           FIELD VISIT
+        ============================== */
+
+        .visit-box {
+            background:
+                linear-gradient(120deg, #0c4525, #176b3a);
+            color: white;
+            border-radius: 24px;
+            padding: 45px;
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 35px;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .visit-box h2 {
+            font-size: 34px;
+            margin-bottom: 13px;
+        }
+
+        .visit-box p {
+            color: #dcece1;
+            margin-bottom: 20px;
+        }
+
+        .visit-list {
+            list-style: none;
+        }
+
+        .visit-list li {
+            margin: 10px 0;
+            color: #edf8f0;
+        }
+
+        .visit-list li::before {
+            content: "✓";
+            color: #a8eabd;
+            font-weight: bold;
+            margin-right: 9px;
+        }
+
+        .visit-photo {
+            border-radius: 18px;
+            overflow: hidden;
+            border: 4px solid rgba(255,255,255,.15);
+        }
+
+        /* ==============================
+           GALLERY
+        ============================== */
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 15px;
+        }
+
+        .gallery-item {
+            height: 240px;
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            background: #dce7df;
+        }
+
+        .gallery-item img {
+            height: 100%;
+            object-fit: cover;
+            transition: .35s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 28px 15px 14px;
+            background: linear-gradient(transparent,rgba(0,0,0,.72));
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        /* ==============================
+           LEARNING
+        ============================== */
+
+        .learning-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .learning-card {
+            padding: 28px;
+            background: white;
+            border-radius: 17px;
+            border: 1px solid #e0e8e2;
+        }
+
+        .learning-card span {
+            font-size: 30px;
+        }
+
+        .learning-card h3 {
+            margin: 10px 0 7px;
+            color: #176b3a;
+        }
+
+        .learning-card p {
+            color: #68736b;
+            font-size: 14px;
+        }
+
+        /* ==============================
+           CONCLUSION
+        ============================== */
+
+        .conclusion {
+            text-align: center;
+            max-width: 820px;
+            margin: auto;
+        }
+
+        .conclusion-box {
+            background: white;
+            border: 1px solid #dfe8e1;
+            padding: 38px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(20,50,30,.05);
+        }
+
+        .conclusion-box p {
+            color: #5e6a62;
+            margin-top: 12px;
+        }
+
+        /* ==============================
+           FOOTER
+        ============================== */
+
+        footer {
+            background: #082c18;
+            color: white;
+            padding: 45px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr 1fr;
+            gap: 35px;
+            padding-bottom: 30px;
+        }
+
+        footer h3 {
+            margin-bottom: 10px;
+            color: #a8eabd;
+        }
+
+        footer p,
+        footer li {
+            color: #c5d6ca;
+            font-size: 14px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin: 7px 0;
+        }
+
+        .creator {
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,.12);
+            text-align: center;
+            color: #b8cabe;
+            font-size: 13px;
+        }
+
+        .creator strong {
+            color: #a8eabd;
+        }
+
+        /* ==============================
+           BACK TO TOP
+        ============================== */
+
+        .top-btn {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            width: 43px;
+            height: 43px;
+            border: none;
+            border-radius: 50%;
+            background: #176b3a;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 7px 20px rgba(0,0,0,.2);
+            display: none;
+            z-index: 999;
+        }
+
+        .top-btn.show {
+            display: block;
+        }
+
+        /* ==============================
+           RESPONSIVE
+        ============================== */
+
+        @media (max-width: 900px) {
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 72px;
+                left: 0;
+                right: 0;
+                background: white;
+                padding: 12px 4%;
+                flex-direction: column;
+                align-items: stretch;
+                border-bottom: 1px solid #e1e8e3;
+                box-shadow: 0 10px 20px rgba(0,0,0,.06);
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            nav a {
+                padding: 13px;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .intro-grid,
+            .visit-box {
+                grid-template-columns: 1fr;
+            }
+
+            .types-grid,
+            .learning-grid {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .process {
+                grid-template-columns: repeat(3,1fr);
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .container {
+                width: 91%;
+            }
+
+            .hero {
+                min-height: 590px;
+                background:
+                    linear-gradient(rgba(5,39,20,.84),rgba(5,39,20,.88)),
+                    url("https://images.unsplash.com/photo-1569230516306-5a22cb0f6f8f?auto=format&fit=crop&w=1200&q=80")
+                    center/cover;
+            }
+
+            .hero-content {
+                padding: 55px 0;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+                letter-spacing: -1px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .section {
+                padding: 58px 0;
+            }
+
+            .intro-card,
+            .visit-box,
+            .conclusion-box {
+                padding: 25px;
+            }
+
+            .visit-box h2 {
+                font-size: 28px;
+            }
+
+            .types-grid,
+            .learning-grid,
+            .management-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2,1fr);
+                gap: 9px;
+            }
+
+            .gallery-item {
+                height: 180px;
+            }
+
+            .process {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .visit-info {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ==========================================
+     HEADER / NAVIGATION
+=========================================== -->
+
+<header>
+    <div class="container navbar">
+
+        <a href="#home" class="logo">
+            <div class="logo-icon">🧬</div>
+
+            <div class="logo-text">
+                <small>DEPARTMENT OF</small>
+                <span>Zoology</span>
+            </div>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open Menu">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#report">Report</a>
+            <a href="#varieties">Varieties</a>
+            <a href="#management">Management</a>
+            <a href="#visit">Field Visit</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">About</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- ==========================================
+     HERO SECTION
+=========================================== -->
+
+<section class="hero" id="home">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                🐔 B.Sc. Zoology • Field Visit Report
+            </div>
+
+            <h1>
+                Poultry Farming
+                <span>Field Visit</span>
+                Report
+            </h1>
+
+            <p>
+                A practical field-study report on poultry farming,
+                chicken varieties, broiler and breeder management,
+                chick care, egg management and modern poultry practices.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#report" class="btn btn-primary">
+                    Explore Report →
+                </a>
+
+                <a href="#varieties" class="btn btn-outline">
+                    Chicken Varieties
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     INTRODUCTION / REPORT
+=========================================== -->
+
+<section class="section" id="report">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="mini">Field Study</div>
+
+            <h2>About the Field Visit</h2>
+
+            <p>
+                The field visit provided practical knowledge about
+                poultry production and scientific management practices.
+            </p>
+
+        </div>
+
+
+        <div class="intro-grid">
+
+            <div class="intro-card">
+
+                <h3>🐔 Poultry Farming</h3>
+
+                <p>
+                    Poultry farming is the scientific rearing and
+                    management of domestic birds such as chickens
+                    for the production of eggs and meat.
+                </p>
+
+                <p>
+                    During the field visit, different aspects of
+                    poultry production were observed, including
+                    housing, feeding, breeding, chick management,
+                    egg collection and hygiene.
+                </p>
+
+                <p>
+                    The visit helped students understand how
+                    theoretical knowledge of Zoology is applied
+                    in practical poultry production.
+                </p>
+
+            </div>
+
+
+            <div class="intro-card">
+
+                <h3>📋 Visit Information</h3>
+
+                <div class="visit-info">
+
+                    <div class="info-box">
+                        <strong>College</strong>
+                        <span>S.R.K.P. Govt. College</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Location</strong>
+                        <span>Kishangarh, Rajasthan</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>District</strong>
+                        <span>Ajmer District</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Department</strong>
+                        <span>Zoology</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Study Topic</strong>
+                        <span>Poultry Farming</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Activity</strong>
+                        <span>Field Visit</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     STATISTICS
+=========================================== -->
+
+<section class="stats">
+
+    <div class="container stats-grid">
+
+        <div class="stat">
+            <div class="stat-icon">🐣</div>
+            <h3>01</h3>
+            <p>Field Study</p>
+        </div>
+
+        <div class="stat">
+            <div class="stat-icon">🐔</div>
+            <h3>03+</h3>
+            <p>Bird Categories</p>
+        </div>
+
+        <div class="stat">
+            <div class="stat-icon">🥚</div>
+            <h3>02</h3>
+            <p>Major Products</p>
+        </div>
+
+        <div class="stat">
+            <div class="stat-icon">📚</div>
+            <h3>360°</h3>
+            <p>Practical Learning</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     CHICKEN VARIETIES
+=========================================== -->
+
+<section class="section" id="varieties">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="mini">Poultry Birds</div>
+
+            <h2>Chicken Varieties</h2>
+
+            <p>
+                Important poultry categories observed and studied
+                during the field visit.
+            </p>
+
+        </div>
+
+
+        <div class="types-grid">
+
+            <!-- Broiler -->
+
+            <article class="type-card">
+
+                <div class="type-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=900&q=80"
+                        alt="Broiler chicken">
+                </div>
+
+                <div class="type-body">
+
+                    <span class="tag">MEAT PURPOSE</span>
+
+                    <h3>Broiler</h3>
+
+                    <p>
+                        Broilers are chickens specially selected
+                        and reared for rapid growth and efficient
+                        meat production.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Layer -->
+
+            <article class="type-card">
+
+                <div class="type-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=900&q=80"
+                        alt="Layer chicken and poultry">
+                </div>
+
+                <div class="type-body">
+
+                    <span class="tag">EGG PURPOSE</span>
+
+                    <h3>Layer</h3>
+
+                    <p>
+                        Layer birds are maintained primarily for
+                        high and regular egg production.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Breeder -->
+
+            <article class="type-card">
+
+                <div class="type-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1518497672402-5b1a0b4e7a34?auto=format&fit=crop&w=900&q=80"
+                        alt="Breeder poultry birds">
+                </div>
+
+                <div class="type-body">
+
+                    <span class="tag">BREEDING PURPOSE</span>
+
+                    <h3>Breeder</h3>
+
+                    <p>
+                        Breeder birds are selected and managed
+                        to produce fertile eggs for hatchery
+                        and chick production.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Desi -->
+
+            <article class="type-card">
+
+                <div class="type-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1589924691106-073b9b0d6d4e?auto=format&fit=crop&w=900&q=80"
+                        alt="Desi chicken">
+                </div>
+
+                <div class="type-body">
+
+                    <span class="tag">INDIGENOUS</span>
+
+                    <h3>Desi / Indigenous</h3>
+
+                    <p>
+                        Indigenous chickens are adapted to local
+                        environmental conditions and are commonly
+                        reared under backyard or semi-intensive systems.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Chick -->
+
+            <article class="type-card">
+
+                <div class="type-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1591206369811-4eeb2f7f0d4c?auto=format&fit=crop&w=900&q=80"
+                        alt="Day old chicks">
+                </div>
+
+                <div class="type-body">
+
+                    <span class="tag">YOUNG BIRD</span>
+
+                    <h3>Chicks</h3>
+
+                    <p>
+                        Newly hatched chicks require proper brooding,
+                        temperature control, clean water, balanced
+                        feed and disease prevention.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Hatchery -->
+
+            <article class="type-card">
+
+                <div class="type-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1563281577-a7be47e2049c?auto=format&fit=crop&w=900&q=80"
+                        alt="Poultry eggs">
+                </div>
+
+                <div class="type-body">
+
+                    <span class="tag">HATCHERY</span>
+
+                    <h3>Hatching Eggs</h3>
+
+                    <p>
+                        Fertile eggs from healthy breeder birds
+                        are carefully collected, stored and
+                        incubated for chick production.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     MANAGEMENT
+=========================================== -->
+
+<section class="section management" id="management">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="mini">Scientific Practices</div>
+
+            <h2>Poultry Management</h2>
+
+            <p>
+                Major management practices required for healthy
+                birds and efficient poultry production.
+            </p>
+
+        </div>
+
+
+        <div class="management-grid">
+
+            <div class="management-card">
+
+                <div class="management-icon">🌾</div>
+
+                <div>
+                    <h3>Feed & Nutrition</h3>
+
+                    <p>
+                        Birds should receive balanced feed containing
+                        carbohydrates, proteins, fats, vitamins,
+                        minerals and adequate clean water.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="management-card">
+
+                <div class="management-icon">🏠</div>
+
+                <div>
+                    <h3>Poultry Shed</h3>
+
+                    <p>
+                        Proper ventilation, lighting, temperature,
+                        space and cleanliness are essential for
+                        maintaining healthy poultry birds.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="management-card">
+
+                <div class="management-icon">💉</div>
+
+                <div>
+                    <h3>Vaccination</h3>
+
+                    <p>
+                        Vaccination programmes and biosecurity
+                        practices help protect poultry from
+                        important infectious diseases.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="management-card">
+
+                <div class="management-icon">🧼</div>
+
+                <div>
+                    <h3>Hygiene & Biosecurity</h3>
+
+                    <p>
+                        Regular cleaning, disinfection, controlled
+                        entry and proper waste disposal reduce
+                        disease risks.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="management-card">
+
+                <div class="management-icon">🌡️</div>
+
+                <div>
+                    <h3>Temperature Control</h3>
+
+                    <p>
+                        Young chicks need careful temperature
+                        management during brooding to maintain
+                        comfort and survival.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="management-card">
+
+                <div class="management-icon">📊</div>
+
+                <div>
+                    <h3>Record Keeping</h3>
+
+                    <p>
+                        Records of feed consumption, mortality,
+                        body weight, egg production and health
+                        help monitor farm performance.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     CHICK & EGG MANAGEMENT PROCESS
+=========================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="mini">Production Cycle</div>
+
+            <h2>Chick & Egg Management</h2>
+
+            <p>
+                Basic steps involved from fertile egg selection
+                to healthy chick rearing.
+            </p>
+
+        </div>
+
+
+        <div class="process">
+
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Egg Selection</h3>
+                <p>Select clean, suitable fertile eggs.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Egg Storage</h3>
+                <p>Store eggs under suitable conditions.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Incubation</h3>
+                <p>Maintain temperature and humidity.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Hatching</h3>
+                <p>Healthy chicks emerge from eggs.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">5</div>
+                <h3>Brooding</h3>
+                <p>Provide warmth, feed and clean water.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     BROILER / BREEDER SPECIAL SECTION
+=========================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="mini">Special Study</div>
+
+            <h2>Broiler & Breeder Management</h2>
+
+            <p>
+                Understanding the different objectives of meat
+                production and breeding programmes.
+            </p>
+
+        </div>
+
+
+        <div class="intro-grid">
+
+            <div class="intro-card">
+
+                <h3>🍗 Broiler Management</h3>
+
+                <p>
+                    Broiler production focuses on rapid and efficient
+                    growth. Proper nutrition, ventilation, temperature,
+                    clean water and disease prevention are important.
+                </p>
+
+                <p>
+                    Regular observation of body weight, feed intake,
+                    behaviour and health helps maintain good flock
+                    performance.
+                </p>
+
+            </div>
+
+
+            <div class="intro-card">
+
+                <h3>🐔 Breeder Management</h3>
+
+                <p>
+                    Breeder management focuses on maintaining healthy
+                    male and female birds capable of producing
+                    high-quality fertile eggs.
+                </p>
+
+                <p>
+                    Proper feeding, body-weight control, flock health
+                    and egg collection are important parts of breeder
+                    management.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     FIELD VISIT HIGHLIGHT
+=========================================== -->
+
+<section class="section" id="visit">
+
+    <div class="container">
+
+        <div class="visit-box">
+
+            <div>
+
+                <div class="mini" style="color:#a8eabd;">
+                    FIELD EXPERIENCE
+                </div>
+
+                <h2>What We Observed</h2>
+
+                <p>
+                    The field visit connected classroom learning
+                    with real poultry-farm practices.
+                </p>
+
+                <ul class="visit-list">
+
+                    <li>Poultry housing and shed arrangement</li>
+
+                    <li>Different categories of poultry birds</li>
+
+                    <li>Broiler and breeder management</li>
+
+                    <li>Feed and drinking-water systems</li>
+
+                    <li>Chick brooding and care</li>
+
+                    <li>Egg collection and management</li>
+
+                    <li>Cleaning and biosecurity practices</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="visit-photo">
+
+                <img
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1000&q=85"
+                    alt="Poultry farm field visit">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     GALLERY
+=========================================== -->
+
+<section class="section" id="gallery">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="mini">Visual Record</div>
+
+            <h2>Field Visit Gallery</h2>
+
+            <p>
+                Replace these sample photographs with your
+                actual field-visit photographs.
+            </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=900&q=80"
+                    alt="Poultry birds">
+                <div class="gallery-caption">
+                    Poultry Birds
+                </div>
+            </div>
+
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1591206369811-4eeb2f7f0d4c?auto=format&fit=crop&w=900&q=80"
+                    alt="Chicks">
+                <div class="gallery-caption">
+                    Chick Management
+                </div>
+            </div>
+
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1563281577-a7be47e2049c?auto=format&fit=crop&w=900&q=80"
+                    alt="Poultry eggs">
+                <div class="gallery-caption">
+                    Egg Management
+                </div>
+            </div>
+
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1518497672402-5b1a0b4e7a34?auto=format&fit=crop&w=900&q=80"
+                    alt="Breeder birds">
+                <div class="gallery-caption">
+                    Breeder Birds
+                </div>
+            </div>
+
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=900&q=80"
+                    alt="Poultry farming">
+                <div class="gallery-caption">
+                    Poultry Farm
+                </div>
+            </div>
+
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1569230516306-5a22cb0f6f8f?auto=format&fit=crop&w=900&q=80"
+                    alt="Chicken farming">
+                <div class="gallery-caption">
+                    Field Study
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     LEARNING OUTCOMES
+=========================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="mini">Student Learning</div>
+
+            <h2>Learning Outcomes</h2>
+
+            <p>
+                Key knowledge gained through the poultry farming
+                field visit.
+            </p>
+
+        </div>
+
+
+        <div class="learning-grid">
+
+            <div class="learning-card">
+                <span>🔬</span>
+                <h3>Practical Knowledge</h3>
+                <p>
+                    Students understood how poultry production
+                    principles are applied in real farm conditions.
+                </p>
+            </div>
+
+
+            <div class="learning-card">
+                <span>🐣</span>
+                <h3>Bird Management</h3>
+                <p>
+                    Students learned about housing, feeding,
+                    breeding, brooding and general bird care.
+                </p>
+            </div>
+
+
+            <div class="learning-card">
+                <span>🥚</span>
+                <h3>Egg Production</h3>
+                <p>
+                    Students observed the importance of proper
+                    egg collection, handling and storage.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     CONCLUSION
+=========================================== -->
+
+<section class="section">
+
+    <div class="container conclusion">
+
+        <div class="section-title">
+
+            <div class="mini">Report Summary</div>
+
+            <h2>Conclusion</h2>
+
+        </div>
+
+
+        <div class="conclusion-box">
+
+            <h3>
+                Poultry Farming: From Theory to Practice
+            </h3>
+
+            <p>
+                The poultry farming field visit was an informative
+                practical learning experience. It helped students
+                understand different poultry birds, broiler and
+                breeder management, chick care, egg handling,
+                nutrition, hygiene and biosecurity.
+            </p>
+
+            <p>
+                Such field visits are valuable for developing
+                practical understanding and connecting academic
+                Zoology knowledge with agricultural and animal
+                production practices.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     FOOTER
+=========================================== -->
+
+<footer id="contact">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <h3>🧬 Zoology Department</h3>
+
+                <p>
+                    S.R.K.P. Govt. College, Kishangarh
+                </p>
+
+                <p>
+                    Ajmer District, Rajasthan
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Report</h3>
+
+                <ul>
+                    <li>Poultry Farming</li>
+                    <li>Chicken Varieties</li>
+                    <li>Broiler Management</li>
+                    <li>Breeder Management</li>
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3>Field Study</h3>
+
+                <ul>
+                    <li>Chick Management</li>
+                    <li>Egg Management</li>
+                    <li>Feed & Nutrition</li>
+                    <li>Biosecurity</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="creator">
+
+            Website designed & created by
+            <strong>Amaan Mansuri</strong>
+
+            <br>
+
+            <span>
+                © <span id="year"></span>
+                Zoology Department Field Visit Report
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- BACK TO TOP -->
+
+<button class="top-btn" id="topBtn" aria-label="Back to top">
+    ↑
+</button>
+
+
+<!-- ==========================================
+     JAVASCRIPT
+=========================================== -->
+
+<script>
+
+    /* Mobile Menu */
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navMenu = document.getElementById("navMenu");
+
+    menuBtn.addEventListener("click", function () {
+
+        navMenu.classList.toggle("active");
+
+        if (navMenu.classList.contains("active")) {
+            menuBtn.innerHTML = "✕";
+        } else {
+            menuBtn.innerHTML = "☰";
+        }
+
+    });
+
+
+    /* Close mobile menu after clicking a link */
+
+    document.querySelectorAll("#navMenu a").forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            navMenu.classList.remove("active");
+            menuBtn.innerHTML = "☰";
+
+        });
+
+    });
+
+
+    /* Back To Top Button */
+
+    const topBtn = document.getElementById("topBtn");
+
+    window.addEventListener("scroll", function() {
+
+        if (window.scrollY > 450) {
+            topBtn.classList.add("show");
+        } else {
+            topBtn.classList.remove("show");
+        }
+
+    });
+
+
+    topBtn.addEventListener("click", function() {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+
+    /* Current Year */
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+
+    /* Image Error Handling */
+
+    document.querySelectorAll("img").forEach(function(img) {
+
+        img.addEventListener("error", function() {
+
+            this.style.display = "none";
+
+            const parent = this.parentElement;
+
+            parent.style.display = "grid";
+            parent.style.placeItems = "center";
+            parent.style.background = "#dfeae2";
+
+        });
+
+    });
+
+</script>
+
+</body>
+</html>
